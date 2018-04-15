@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="Spring" extends="struts-default" namespace="/">
+	<action name="*_Users" class="usersAction" method="{1}">
+	<result name="success">index.jsp</result>
+	<result name="login">login.jsp</result>
+	<result name="result">result.jsp</result>
+	</action>
+<action name="*_Food" class="foodAction" method="{1}">
+<result name="show">menu.jsp</result>
+
+</action>
+<action name="*_Order" class="orderAction" method="{1}">
+<result name="success"> index.jsp</result>
+</action>
+</package>
+</struts>    
